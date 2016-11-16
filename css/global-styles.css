@@ -1,0 +1,278 @@
+/* Global styles */
+body{
+	font: 400 14px/1.53 'Open Sans', sans-serif;
+	color: #111;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+/* Header */
+header{
+	position: relative;
+	border-bottom: 1px solid #C0C5CE;
+}
+/* Navigation */
+.navbar{
+	background: #fff;
+	border: none;
+	margin: 0;
+}
+
+.navbar-header .navbar-brand {
+    margin: 5px auto 7px;
+    padding: 0;
+    width: 40%;
+	height: 90px;
+}
+
+.navbar-nav{
+	float: right;
+	margin: 25px 0 0;
+}
+
+.navbar-inverse .navbar-nav > li{
+	margin-right: 10px;
+}
+
+.navbar-inverse .navbar-nav > li:last-child{
+	margin: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+	color: #000;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 8px 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a.active,
+.navbar-inverse .navbar-nav > li > a:hover{
+	border: 1px solid;
+	color: #000;
+}
+
+/* main container */
+.content-container{
+	margin: 30px 0;
+	min-height: calc(100vh - 215px);
+}
+
+.page-title{
+	margin: 0 0 25px;
+}
+
+.welcome-text{
+	text-transform: capitalize;
+	margin: 0 0 15px;
+}
+
+.activate-account-msg{
+	text-align: center;
+}
+
+.admin-dashboard .nav-holder a{
+	height: 150px;
+	border: 1px solid #000;
+	text-align: center;
+	display: block;
+	margin-bottom: 25px;
+	line-height: 11;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+/* Form holder */
+.form-holder{
+	float: none;
+	margin: 0 auto;
+}
+
+.form-holder .invalid .form-control{
+	border-color: #DC3F1C;
+}
+
+.form-holder .email-exist .form-control.email{
+	border-color: #DC3F1C;
+}
+
+.btn-holder{
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.btn-holder .manditory-note{
+	font-style: italic;
+	font-size: 0.8em;
+	float: left;
+}
+
+.validate-error{
+	color: #DC3F1C;
+}
+
+.note-text{
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.course-wrapper{
+	display: none;
+}
+
+/* hide mobile sidebar drop down */
+.mobile-dropdown{
+	display: none;
+}
+
+/* two panel dashboard */
+.user-list-holder{
+	border: 1px solid #c0c5ce;
+	max-height: 50vh;
+	overflow-y: scroll;
+	padding: 0;
+}
+
+.sidebar-holder .user-block{
+	border-bottom: 1px solid #c0c5ce;
+}
+
+.sidebar-holder .user-block:last-child{
+	border: none;
+}
+
+.sidebar-holder .user-block a{
+	color: #111;
+	cursor: pointer;
+	padding: 10px 15px;
+	display: block;
+}
+
+.sidebar-holder .user-block a:hover,
+.sidebar-holder .user-block.active a{
+	text-decoration: none;
+	background: #F7F7F7;
+}
+
+.sidebar-holder .user-block p{
+	margin: 0 0 5px;
+	text-transform: capitalize;
+}
+
+.sidebar-holder .user-block .faculty-name{
+	text-transform: uppercase;
+}
+
+.sidebar-holder .user-block .field-name{
+	font-style: italic;
+	font-size: 0.9em;
+	text-transform: capitalize;
+}
+
+.title-holder{
+	overflow: hidden;
+}
+
+.title-holder .page-title{
+	float: left;
+}
+
+.title-holder #addRecord,
+.title-holder #updateRecord{
+	float: right;
+}
+
+.title-holder #updateRecord{
+	display: none;
+}
+
+#add-form-holder{
+	display: none;
+}
+
+.article-holder > *{
+	margin-right: 10px;
+}
+
+.article-holder .file-wrapper{
+	margin-bottom: 15px;
+	border-bottom: 1px solid #d8cece;
+	padding: 5px 0 15px;
+}
+
+.article-holder .doc-holder .doc-img{
+	width: 80px;
+	height: 100px;
+	float: left;
+}
+
+.article-holder .doc-holder p{
+	float: left;
+}
+
+.article-holder .file-wrapper .img-holder{
+	width: 100px;
+    height: 100px;
+    border: 1px solid #d8cece;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer{
+	text-align: center;
+	padding: 15px 0 0;
+	border-top: 1px solid #C0C5CE;
+}
+
+/* Media querries */
+@media (max-width: 767px){
+	.navbar-nav{
+		float: none;
+	}
+
+	.navbar-header{
+		border-bottom: 1px solid #C0C5CE;
+	}
+
+	.navbar-inverse .navbar-collapse,
+	.navbar-inverse .navbar-form{
+		border: none;
+	}
+
+	.navbar-header .navbar-brand{
+		height: auto;
+	}
+
+	.navbar-inverse .navbar-toggle{
+		margin-top: 8%;
+	}
+
+	.navbar-inverse .navbar-toggle:hover,
+	.navbar-inverse .navbar-toggle:focus{
+		background: none;
+	}
+
+	.navbar-inverse .navbar-toggle .icon-bar{
+		background: #000;
+	}
+
+	.navbar-inverse .navbar-nav{
+		margin: 15px 0 10px;
+	}
+
+	.navbar-inverse .navbar-nav > li{
+		margin: 0 0 10px;
+		text-align: center;
+	}
+
+	/* showing sidebar drop down in mobile */
+	.mobile-dropdown{
+		display: block;
+		margin: 15px 0;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	.mobile-dropdown{
+	}
+}
